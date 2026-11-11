@@ -1,0 +1,10 @@
+test_case,trial,strategy,correct,input_tokens,output_tokens,latency_ms
+1,1,Full History,True,4175,89,1129.4
+1,1,Rolling Window,False,860,48,485.31
+1,1,Smart Memory Vault,True,869,142,974.26
+1,2,Full History,True,4175,89,14155.33
+1,2,Rolling Window,False,860,48,6545.28
+1,2,Smart Memory Vault,True,869,142,4425.52
+1,3,Full History,True,4175,89,34228.34
+1,3,Rolling Window,False,860,48,5639.22
+1,3,Smart Memory Vault,True,869,156,10324.41

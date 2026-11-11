@@ -1,0 +1,18 @@
+
+[
+  {
+    "session_id": "chat-1edbc209",
+    "question": "What is my favorite programming language?",
+    "expected_answer": "Java"
+  },
+  {
+    "session_id": "chat-1edbc209",
+    "question": "What is my test project called?",
+    "expected_answer": "Orion"
+  },
+  {
+    "session_id": "chat-1edbc209",
+    "question": "Which cloud platform do I prefer?",
+    "expected_answer": "AWS"
+  }
+]

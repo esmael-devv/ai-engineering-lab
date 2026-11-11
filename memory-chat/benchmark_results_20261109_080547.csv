@@ -1,0 +1,28 @@
+test_case,trial,strategy,correct,input_tokens,output_tokens,latency_ms,status
+1,1,Full History,,,,,skipped_token_budget
+1,1,Rolling Window,False,108.0,97.0,575.68,completed
+1,1,Smart Memory Vault,True,123.0,49.0,313.3,completed
+1,2,Full History,,,,,skipped_token_budget
+1,2,Rolling Window,False,108.0,97.0,472.14,completed
+1,2,Smart Memory Vault,True,123.0,49.0,320.01,completed
+1,3,Full History,,,,,skipped_token_budget
+1,3,Rolling Window,False,108.0,97.0,589.19,completed
+1,3,Smart Memory Vault,True,123.0,49.0,404.4,completed
+2,1,Full History,,,,,skipped_token_budget
+2,1,Rolling Window,False,108.0,77.0,242.27,completed
+2,1,Smart Memory Vault,True,123.0,88.0,540.48,completed
+2,2,Full History,,,,,skipped_token_budget
+2,2,Rolling Window,False,108.0,77.0,637.84,completed
+2,2,Smart Memory Vault,True,123.0,88.0,368.47,completed
+2,3,Full History,,,,,skipped_token_budget
+2,3,Rolling Window,False,108.0,77.0,545.69,completed
+2,3,Smart Memory Vault,True,123.0,88.0,454.84,completed
+3,1,Full History,,,,,skipped_token_budget
+3,1,Rolling Window,False,108.0,80.0,365.41,completed
+3,1,Smart Memory Vault,True,123.0,88.0,459.92,completed
+3,2,Full History,,,,,skipped_token_budget
+3,2,Rolling Window,False,108.0,80.0,394.81,completed
+3,2,Smart Memory Vault,True,123.0,88.0,339.55,completed
+3,3,Full History,,,,,skipped_token_budget
+3,3,Rolling Window,False,108.0,80.0,1233.14,completed
+3,3,Smart Memory Vault,True,123.0,88.0,311.69,completed

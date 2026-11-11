@@ -1,0 +1,16 @@
+test_case,trial,strategy,correct,input_tokens,output_tokens,latency_ms,status,model,window_budget,dataset_hash,benchmark_version,timestamp_utc
+1,1,Full History,,,,,skipped_token_budget,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+1,1,Rolling Window,False,995.0,82.0,8948.8,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+1,1,Smart Memory Vault,True,1010.0,34.0,417.8,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+1,1,Hybrid Summary + Vault,True,188.0,51.0,591.93,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+1,1,Summary Only,True,158.0,36.0,23644.06,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+2,1,Full History,,,,,skipped_token_budget,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+2,1,Rolling Window,False,995.0,100.0,495.79,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+2,1,Smart Memory Vault,True,1010.0,84.0,425.64,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+2,1,Hybrid Summary + Vault,True,188.0,52.0,298.8,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+2,1,Summary Only,True,158.0,51.0,783.12,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+3,1,Full History,,,,,skipped_token_budget,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+3,1,Rolling Window,False,995.0,99.0,343.48,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+3,1,Smart Memory Vault,True,1010.0,36.0,360.13,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+3,1,Hybrid Summary + Vault,True,188.0,49.0,302.23,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
+3,1,Summary Only,True,158.0,51.0,322.87,completed,openai/gpt-oss-20b,1500,e5552677ecb9,3.0,2026-11-11T22:48:37.473834+00:00
