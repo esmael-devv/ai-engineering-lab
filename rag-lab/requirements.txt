@@ -1,0 +1,26 @@
+
+# Application interface
+gradio
+
+# Environment configuration
+python-dotenv
+
+# LangChain
+langchain-core
+langchain-community
+langchain-groq
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+
+# Vector database
+chromadb
+
+# Local embeddings and reranking
+sentence-transformers
+
+# PDF processing
+pypdf
+
+# Automated testing
+pytest

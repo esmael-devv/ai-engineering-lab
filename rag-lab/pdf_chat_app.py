@@ -14,6 +14,8 @@ from sentence_transformers import CrossEncoder
 
 from retrieval_service import select_evidence
 from rag_service import generate_answer
+from rag_resources import load_collection, get_reranker
+
 
 from pdf_ingestion import ingest_pdf
 
@@ -49,20 +51,6 @@ print("Loading reranker...")
 reranker = CrossEncoder(
     "cross-encoder/ms-marco-MiniLM-L6-v2"
 )
-
-
-
-# =========================================================
-# LOAD EXISTING CHROMA COLLECTION
-# =========================================================
-
-def load_collection(collection_name):
-
-    return Chroma(
-        collection_name=collection_name,
-        persist_directory=str(DB_DIR),
-        embedding_function=embedder
-    )
 
 
 # =========================================================
@@ -169,7 +157,7 @@ def ask_pdf(question, history, collection_name, strategy):
             db=db,
             question=question,
             strategy=strategy,
-            reranker=reranker
+            reranker=get_reranker()
         )
 
         retrieval_time = retrieval_metrics["retrieval_time"]
