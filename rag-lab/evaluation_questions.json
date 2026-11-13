@@ -1,0 +1,23 @@
+
+[
+  {
+    "question": "What is the main objective of this document?",
+    "expected_pages": [1],
+    "category": "document_summary"
+  },
+  {
+    "question": "How is PCA used in face recognition?",
+    "expected_pages": [1, 9],
+    "category": "technical"
+  },
+  {
+    "question": "What are the main stages of face recognition?",
+    "expected_pages": [1, 9],
+    "category": "technical"
+  },
+  {
+    "question": "What is the author's favorite programming language?",
+    "expected_pages": [],
+    "category": "unanswerable"
+  }
+]
