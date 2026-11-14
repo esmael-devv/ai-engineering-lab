@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": "calculator_01",
+    "question": "What is 15% of 850?",
+    "expected_tools": ["calculator"],
+    "expected_answer_contains": ["127.5"]
+  },
+  {
+    "id": "code_01",
+    "question": "Find the ToolRegistry class in my local repository.",
+    "expected_tools": ["code_search"],
+    "expected_answer_contains": ["executor.py"]
+  },
+  {
+    "id": "web_01",
+    "question": "Find the official Apache Kafka documentation.",
+    "expected_tools": ["web_search"],
+    "expected_answer_contains": ["kafka.apache.org"]
+  },
+  {
+    "id": "multi_tool_01",
+    "question": "Find the official Apache Kafka documentation and locate Kafka-related code in my local repository. Use both web_search and code_search before finishing.",
+    "expected_tools": ["web_search", "code_search"],
+    "expected_answer_contains": ["kafka.apache.org"]
+  }
+]

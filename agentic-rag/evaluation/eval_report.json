@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-11-14T13:42:14.981781+00:00",
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pass_rate": 100.0
+  },
+  "results": [
+    {
+      "id": "calculator_01",
+      "question": "What is 15% of 850?",
+      "passed": true,
+      "checks": {
+        "tool_routing": true,
+        "answer_content": true,
+        "citation_validity": true,
+        "tool_budget": true
+      },
+      "expected_tools": [
+        "calculator"
+      ],
+      "successful_tools": [
+        "calculator"
+      ],
+      "tools_attempted": [
+        "calculator"
+      ],
+      "answer": "15% of 850 is 127.50 [E1]",
+      "cited_evidence_ids": [
+        "E1"
+      ],
+      "evidence_sufficient": true,
+      "verification_status": "basic_checks_passed",
+      "verification_warnings": [],
+      "tool_calls": 1,
+      "failed_calls": 0,
+      "elapsed_seconds": 2.035,
+      "error": null
+    },
+    {
+      "id": "code_01",
+      "question": "Find the ToolRegistry class in my local repository.",
+      "passed": true,
+      "checks": {
+        "tool_routing": true,
+        "answer_content": true,
+        "citation_validity": true,
+        "tool_budget": true
+      },
+      "expected_tools": [
+        "code_search"
+      ],
+      "successful_tools": [
+        "code_search"
+      ],
+      "tools_attempted": [
+        "code_search"
+      ],
+      "answer": "The ToolRegistry class is defined in the file agentic-rag/executor.py [E3].",
+      "cited_evidence_ids": [
+        "E3"
+      ],
+      "evidence_sufficient": true,
+      "verification_status": "basic_checks_passed",
+      "verification_warnings": [],
+      "tool_calls": 1,
+      "failed_calls": 0,
+      "elapsed_seconds": 1.132,
+      "error": null
+    },
+    {
+      "id": "web_01",
+      "question": "Find the official Apache Kafka documentation.",
+      "passed": true,
+      "checks": {
+        "tool_routing": true,
+        "answer_content": true,
+        "citation_validity": true,
+        "tool_budget": true
+      },
+      "expected_tools": [
+        "web_search"
+      ],
+      "successful_tools": [
+        "web_search"
+      ],
+      "tools_attempted": [
+        "web_search",
+        "web_search"
+      ],
+      "answer": "The official Apache Kafka documentation is hosted on the Kafka project site at https://kafka.apache.org. For example, the Getting Started Introduction page is available at https://kafka.apache.org/24/getting-started/introduction/ and the latest version at https://kafka.apache.org/44/getting-started/introduction/.[E1][E2]",
+      "cited_evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "evidence_sufficient": true,
+      "verification_status": "basic_checks_passed",
+      "verification_warnings": [],
+      "tool_calls": 2,
+      "failed_calls": 1,
+      "elapsed_seconds": 9.394,
+      "error": null
+    },
+    {
+      "id": "multi_tool_01",
+      "question": "Find the official Apache Kafka documentation and locate Kafka-related code in my local repository. Use both web_search and code_search before finishing.",
+      "passed": true,
+      "checks": {
+        "tool_routing": true,
+        "answer_content": true,
+        "citation_validity": true,
+        "tool_budget": true
+      },
+      "expected_tools": [
+        "code_search",
+        "web_search"
+      ],
+      "successful_tools": [
+        "code_search",
+        "web_search"
+      ],
+      "tools_attempted": [
+        "web_search",
+        "code_search"
+      ],
+      "answer": "The official Apache Kafka documentation can be found at https://kafka.apache.org, which hosts the current and older versions of the docs [E1]. I performed a code search in your local repository but did not find any files that contain Kafka‑related code or references to Kafka APIs, so I cannot point to specific Kafka code in your repository at this time.",
+      "cited_evidence_ids": [
+        "E1"
+      ],
+      "evidence_sufficient": false,
+      "verification_status": "needs_review",
+      "verification_warnings": [
+        "Code search found references, but no clear implementation candidates."
+      ],
+      "tool_calls": 2,
+      "failed_calls": 0,
+      "elapsed_seconds": 51.197,
+      "error": null
+    }
+  ]
+}

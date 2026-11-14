@@ -3,9 +3,13 @@ from langchain_core.tools import tool
 from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
 
 
+
 search_client = DuckDuckGoSearchAPIWrapper(
-    max_results=5
+    max_results=5,
+    region="us-en",
+    backend="html"
 )
+
 
 
 @tool
